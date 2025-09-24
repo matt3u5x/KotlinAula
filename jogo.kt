@@ -2,7 +2,7 @@ import kotlin.system.exitProcess
 import kotlin.concurrent.thread
 import java.util.concurrent.atomic.AtomicLong
 
-// Singleton para criar mapas (usando object conforme solicitado)
+
 object MapaFactory {
     private val mapas = listOf(
         """
@@ -89,7 +89,7 @@ object MapaFactory {
     fun temProximoMapa(): Boolean = mapaAtualIndex < mapas.size
 }
 
-// Classe principal do jogo
+
 class JogoLabirinto {
     private var labirinto: Array<CharArray> = arrayOf()
     private var posicaoJogador: Pair<Int, Int> = Pair(0, 0)
@@ -245,7 +245,7 @@ class JogoLabirinto {
     }
 }
 
-// Função main para executar o jogo
+
 fun main() {
     val jogo = JogoLabirinto()
     jogo.iniciarJogo()
